@@ -1,3 +1,6 @@
+#Pod definition file for testing affinity node-pod
+#This example is using Exist as operator
+#
 apiVersion: v1
 kind: Pod
 metadata:
