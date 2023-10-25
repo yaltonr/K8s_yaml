@@ -1,0 +1,9 @@
+apiVersion: v1 
+kind: Pod 
+metadata:
+  name: nginx 
+spec:
+  schedulerName: my-scheduler # this line pointing to scheduler name needs to be added
+  containers:
+  - image: nginx
+    name: nginx
