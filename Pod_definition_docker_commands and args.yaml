@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webapp-green
+spec:
+  containers:
+  - name: webapp-green
+    image: kodekloud/webapp-color
+    command: ["color"]
+    arg: ["green"]
+
+    #Two ways to use it via manifest or kubectl 
+    #Optionally we can also pass the commands via kubectl commandline
+    #kubectl run webapp-green --image=kodekloud/webapp-color --dry-run=client -- --color green
+  
